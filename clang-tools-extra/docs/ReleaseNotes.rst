@@ -119,6 +119,11 @@ New checks
 
   Finds calls to ``new`` with missing exception handler for ``std::bad_alloc``.
 
+- New :doc:`misc-ref-init-assign
+  <clang-tidy/checks/misc-ref-init-assign>` check.
+
+  Finds assignments of reference type variables after initialization.
+
 New check aliases
 ^^^^^^^^^^^^^^^^^
 

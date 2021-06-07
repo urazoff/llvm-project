@@ -16,6 +16,7 @@
 #include "NonCopyableObjects.h"
 #include "NonPrivateMemberVariablesInClassesCheck.h"
 #include "RedundantExpressionCheck.h"
+#include "RefInitAssignCheck.h"
 #include "StaticAssertCheck.h"
 #include "ThrowByValueCatchByReferenceCheck.h"
 #include "UnconventionalAssignOperatorCheck.h"
@@ -43,6 +44,8 @@ public:
         "misc-non-private-member-variables-in-classes");
     CheckFactories.registerCheck<RedundantExpressionCheck>(
         "misc-redundant-expression");
+    CheckFactories.registerCheck<RefInitAssignCheck>(
+        "misc-ref-init-assign");
     CheckFactories.registerCheck<StaticAssertCheck>("misc-static-assert");
     CheckFactories.registerCheck<ThrowByValueCatchByReferenceCheck>(
         "misc-throw-by-value-catch-by-reference");
